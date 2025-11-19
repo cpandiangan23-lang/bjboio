@@ -1,0 +1,118 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  margin: 0;
+  padding: 0;
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 30px;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+form {
+  width: 600px;
+  margin: 40px auto;
+  background-color: #ffffffee;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.2);
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: 2px solid #1d92df;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  background-color: #f7fbff;
+  transition: 0.3s ease;
+}
+
+fieldset:hover {
+  box-shadow: 0 0 10px rgba(52,152,219,0.4);
+}
+
+legend {
+  font-weight: bold;
+  color: #0f8fe4;
+  font-size: 1.1em;
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 94%;
+  padding: 10px 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px #3498db;
+  outline: none;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+label[for="with"],
+label[for="without"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+input[type="submit"]:hover {
+  background-color: #2980b9;
+  transform: scale(1.02);
+}
+
+fieldset legend::before {
+  content: "📝 ";
+}
+
+fieldset:nth-of-type(2) legend::before {
+  content: "🏨 ";
+}
+
+fieldset:nth-of-type(3) legend::before {
+  content: "💳 ";
+}
